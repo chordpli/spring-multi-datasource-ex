@@ -84,4 +84,4 @@ tasks.register('makeGitHooksExecutable', Exec) {
     dependsOn updateGitHooks
 }
 
-compileJava.dependsOn makeGitHooksExecutab
+compileJava.dependsOn makeGitHooksExecutable
