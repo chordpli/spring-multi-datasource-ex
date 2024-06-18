@@ -1,6 +1,7 @@
 package com.pli.springmultidatasourceex.domain.user.entity;
 
 import jakarta.persistence.*;
+import java.time.Instant;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -25,4 +26,7 @@ public class User {
 
   @Column(name = "password", nullable = false)
   private String password;
+
+  @Column(name = "created_at", nullable = false)
+  private Instant createdAt;
 }
