@@ -1,1 +1,21 @@
-spring.application.name=spring-multi-datasource-ex
+spring:
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+  datasource:
+    kor:
+      jdbc-url: jdbc:mysql://localhost:3306/kor
+      username: kr
+      password: password
+      driver-class-name: com.mysql.cj.jdbc.Driver
+    jpn:
+      jdbc-url: jdbc:mysql://localhost:3306/jpn
+      username: jp
+      password: password
+      driver-class-name: com.mysql.cj.jdbc.Driver
+    usa:
+      jdbc-url: jdbc:mysql://localhost:3306/usa
+      username: us
+      password: password
+      driver-class-name: com.mysql.cj.jdbc.Driver
